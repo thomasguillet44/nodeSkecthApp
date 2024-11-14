@@ -1,0 +1,27 @@
+{
+  "name": "sketchapp",
+  "version": "1.0.0",
+  "description": "applciation de croquis aléatoires",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasguillet44/nodeSkecthApp.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasguillet44/nodeSkecthApp/issues"
+  },
+  "homepage": "https://github.com/thomasguillet44/nodeSkecthApp#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+#canvas {
+    border: 2px solid orange;
+    cursor: crosshair;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+
+header {
+  background-color: orange;
+  padding: 2px;
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+   /* Taille fixe pour uniformiser les boutons */
+   width: 150px;
+   text-align: center;
+   margin: 8px !important;
+}
+
+/* Effet au survol */
+button.rightbutton:hover {
+  background-color: #d6570b;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Légère élévation */
+}
+
+.current-user {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+</body>
+
+</html>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            {{#if sketches.length}}
+            <ul>
+                {{#each sketches}}
+                <li>
+                    <p>Sketch ID: {{this.id}}</p>
+                    <p>User ID: {{this.user_id}}</p>
+                    <!-- Supposons que 'image' soit un champ de type data URI pour une image -->
+                    <img src="{{this.image}}" alt="Sketch image" style="width: 200px; height: auto;">
+                </li>
+                {{/each}}
+            </ul>
+            {{else}}
+            <p>Aucun sketch trouvé pour cet utilisateur.</p>
+            {{/if}}
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-10">
+                    <canvas id="canvas" width="880" height="600"></canvas>
+                    <script src="./js/gestionCanva.js"></script>
+                </div>
+                <div class="col-md-2">
+                    <button class="rightbutton" id="save-button">Sauver</button><br>
+                    <button class="rightbutton" id="download-button">Télécharger</button>
+                    <button class="rightbutton" id="delete-button">Effacer le dessin</button>
+                    <script src="./js/rightButton.js"></script>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
